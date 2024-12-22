@@ -51,7 +51,7 @@ ul li{
     text-decoration: line-through;
 }
 .todo-app li.checked::before {
-    background-image: url(img/check.png);
+    background-image: url(check.png);
 }
 
 .todo-app ul li::before {
@@ -61,7 +61,7 @@ ul li{
     height: 23px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(img/unchecked.png);
+    background-image: url(unchecked.png);
     background-size: cover;
     background-position: center;
     top: 12px;
