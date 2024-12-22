@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List --- Remember your task here!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+      <h1>MY To-Do</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Trash</li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="todo-app">
+                <h2>
+                    MY To-Do List
+                <img src="img/icon.png" alt="">
+            </h2>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Write your task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-Container"></ul>
+            </div>
+           
+            
+        </div>
+    </main>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

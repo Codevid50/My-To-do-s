@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+
+
+nav{
+    background: #241a1a;
+    color: wheat;
+    height: 86px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+
+nav h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 14px 47px;
+}
+
+ul{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+ul li{
+    cursor: pointer;
+    padding: 0 18px;
+    list-style: none;
+}
+
+.todo-app ul li {
+    width: 100%;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-app ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+.todo-app li.checked::before {
+    background-image: url(img/check.png);
+}
+
+.todo-app ul li::before {
+    filter: invert(1);
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+.container{
+    display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #121212 , #1f1f1f);
+        padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+      max-width: 442px;
+    background: #121212;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    color: #ffffff;
+     border: 2px solid #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app:hover{
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.todo-app h2{
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 31px;
+    margin-top: -8px;
+    font-family: "Oswald", sans-serif;
+}
+
+.todo-app h2 img{
+    height: 53px;
+    width: 53px;
+    display: flex;
+    margin-left: 13px;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edeef0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 1px 2px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 14px 15px;
+    font-weight: 14px;
+    font-size: 1rem;
+    border-radius: 23px;
+}
+
+
+button{
+    background-color: #282b2a;
+    font-size: 16px;
+    outline: none;
+    color: white;
+    padding: 16px 50px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listContainer{
+    font-family: "Poppins", sans-serif;
+}
+
+span {
+    right: 0px;
+    position: absolute;
+    top: 5.5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #b0b0b0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+span:hover{
+    background-color: #2d2c2c;
+    transition: 1ms ease-out;
+}
